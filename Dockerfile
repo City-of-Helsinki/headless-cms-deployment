@@ -42,7 +42,7 @@ ARG WP_PLUGIN_VERSION_WPO365_LOGIN_PREMIUM=""
 ARG WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION=""
 
 # Install plugins via Composer
-RUN composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms && \
+RUN composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms-theme && \
     composer require hkih:$WP_THEME_VERSION_HEADLESS && \
     composer config repositories.filebird-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-filebird-pro && \
     composer require ninjateam/filebird-pro:$WP_PLUGIN_VERSION_FILEBIRD_PRO && \
