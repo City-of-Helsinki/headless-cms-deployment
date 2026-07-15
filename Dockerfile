@@ -48,6 +48,10 @@ RUN composer config repositories.headless-hkih vcs https://github.com/City-of-He
     composer require ninjateam/filebird-pro:$WP_PLUGIN_VERSION_FILEBIRD_PRO && \
     composer config repositories.polylang-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-polylang-pro && \
     composer require wpsyntex/polylang-pro && \
+    composer config repositories.wpo365-login-premium vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-wpo365-login-premium && \
+    composer require wpo365/wpo365-login-premium && \
+    composer config repositories.publishpress-revisions-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-publishpress-revisions-pro && \
+    composer require publishpress/publishpress-revisions-pro && \
     composer config repositories.packagist composer https://packagist.org && \
     composer require devgeniem/hkih-linkedevents:$WP_PLUGIN_VERSION_HKIH_LINKEDEVENTS && \
     composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_COLLECTION && \
