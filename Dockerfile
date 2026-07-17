@@ -54,11 +54,11 @@ RUN composer config repositories.headless-hkih vcs https://github.com/City-of-He
     composer config repositories.packagist composer https://packagist.org && \
     composer require devgeniem/hkih-linkedevents:$WP_PLUGIN_VERSION_HKIH_LINKEDEVENTS && \
     composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_COLLECTION && \
-    composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_CONTACT && \
-    composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_LANDING_PAGE && \
-    composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_RELEASE && \
-    composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_TRANSLATION && \
-    composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_SPORTSLOCATIONS && \
+    composer require devgeniem/hkih-cpt-contact:$WP_PLUGIN_VERSION_HKIH_CPT_CONTACT && \
+    composer require devgeniem/hkih-cpt-landing-page:$WP_PLUGIN_VERSION_HKIH_CPT_LANDING_PAGE && \
+    composer require devgeniem/hkih-cpt-release:$WP_PLUGIN_VERSION_HKIH_CPT_RELEASE && \
+    composer require devgeniem/hkih-cpt-translation:$WP_PLUGIN_VERSION_HKIH_CPT_TRANSLATION && \
+    composer require devgeniem/hkih-sportslocations:$WP_PLUGIN_VERSION_HKIH_CPT_SPORTSLOCATIONS && \
     composer require valu/wp-graphql-cache:$WP_PLUGIN_VERSION_WP_GRAPHQL_CACHE && \
     composer require valu/wp-graphql-polylang:$WP_PLUGIN_VERSION_WP_GRAPHQL_POLYLANG && \
     composer require wp-graphql/wp-graphql-jwt-authentication:$WP_PLUGIN_VERSION_WP_GRAPHQL_JWT_AUTHENTICATION && \
