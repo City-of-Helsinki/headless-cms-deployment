@@ -38,7 +38,6 @@ ARG WP_PLUGIN_VERSION_WP_GRAPHQL_JWT_AUTHENTICATION=""
 ARG WP_PLUGIN_VERSION_WP_GRAPHQL_POLYLANG=""
 ARG WP_PLUGIN_VERSION_WPO365_LOGIN=""
 ARG WP_PLUGIN_VERSION_WPO365_LOGIN_PREMIUM=""
-ARG WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION=""
 
 # Install plugins via Composer
 RUN composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms-theme && \
@@ -70,6 +69,5 @@ RUN composer config repositories.headless-hkih vcs https://github.com/City-of-He
     composer require wpackagist-plugin/redis-cache:$WP_PLUGIN_VERSION_REDIS_CACHE && \
     composer require wpackagist-plugin/svg-support:$WP_PLUGIN_VERSION_SVG_SUPPORT && \
     composer require wpackagist-plugin/wordpress-importer:$WP_PLUGIN_VERSION_WORDPRESS_IMPORTER && \
-    composer require wpackagist-plugin/wp-sentry-integration:$WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION && \
     composer require wpackagist-plugin/wpo365-login:$WP_PLUGIN_VERSION_WPO365_LOGIN && \
     rm -f /opt/app-root/src/.config/composer/auth.json
