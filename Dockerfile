@@ -81,7 +81,7 @@ RUN composer config repositories.headless-hkih vcs https://github.com/City-of-He
     composer require devgeniem/acf-codifier:$WP_PLUGIN_VERSION_ACF_CODIFIER && \
     composer require xwp/stream:$WP_PLUGIN_VERSION_STREAM && \
     composer require devgeniem/wp-define-more:$WP_PLUGIN_VERSION_WP_DEFINE_MORE && \
-    composer require "composer/installers:2.2 as ^v1.12.0" devgeniem/wp-geniem-project-bells-and-whistles:$WP_PLUGIN_WP_GENIEM_PROJECT_BELLS_AND_WHISTLES && \
+    composer require "composer/installers:2.2 as v1.99.99" devgeniem/wp-geniem-project-bells-and-whistles:$WP_PLUGIN_WP_GENIEM_PROJECT_BELLS_AND_WHISTLES && \
     composer require devgeniem/wp-geniem-roles:$WP_PLUGIN_VERSION_WP_GENIEM_ROLES && \
     composer require wp-graphql/wp-graphql:$WP_PLUGIN_WP_GRAPHQL && \
     composer require rarst/wps:$WP_PLUGIN_VERSION_WPS && \
