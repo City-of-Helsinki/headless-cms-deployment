@@ -51,7 +51,7 @@ ARG WP_PLUGIN_VERSION_WPS=""
 ARG WP_PLUGIN_VERSION_WP_SANITIZE_ACCENTED_UPLOADS=""
 
 # Install plugins via Composer
-RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j-6wy5":"Plugin requires specific version","PKSA-sf9j-1gs7-xzvx":"Plugin requires specific version","PKSA-7h5p-prw9-w5nr":"Plugin requires specific version"}' && \
+RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j-6wy5":"Plugin requires specific version","PKSA-sf9j-1gs7-xzvx":"Plugin requires specific version","PKSA-7h5p-prw9-w5nr":"Plugin requires specific version","PKSA-2dkq-4nxk-nkts":"Plugin requires specific version"}' && \
     composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms-theme && \
     composer require devgeniem/hkih-theme:$WP_THEME_VERSION_HEADLESS && \
     composer config repositories.advanced-custom-fields-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-advanced-custom-fields-pro && \
