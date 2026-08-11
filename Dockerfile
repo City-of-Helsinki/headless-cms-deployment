@@ -55,19 +55,19 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms-theme && \
     composer require devgeniem/hkih-theme:$WP_THEME_VERSION_HEADLESS && \
     composer config repositories.advanced-custom-fields-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-advanced-custom-fields-pro && \
-    composer require acf/advanced-custom-fields-pro && \
+    composer require acf/advanced-custom-fields-pro:$WP_PLUGIN_VERSION_ADVANCED_CUSTOM_FIELDS_PRO && \
     composer config repositories.filebird-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-filebird-pro && \
     composer require ninjateam/filebird-pro:$WP_PLUGIN_VERSION_FILEBIRD_PRO && \
     composer config repositories.polylang-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-polylang-pro && \
-    composer require wpsyntex/polylang-pro && \
+    composer require wpsyntex/polylang-pro:$WP_PLUGIN_VERSION_POLYLANG_PRO && \
     composer config repositories.wpo365-login-premium vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-wpo365-login-premium && \
-    composer require wpo365/wpo365-login-premium && \
+    composer require wpo365/wpo365-login-premium:$WP_PLUGIN_VERSION_WPO365_LOGIN_PREMIUM && \
     composer config repositories.publishpress-revisions-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-publishpress-revisions-pro && \
-    composer require publishpress/publishpress-revisions-pro && \
+    composer require publishpress/publishpress-revisions-pro:$WP_PLUGIN_VERSION_PUBLISHPRESS_REVISIONS_PRO && \
     composer config repositories.wp-all-import-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-wp-all-import-pro && \
-    composer require soflyy/wp-all-import-pro && \
-    composer config repositories.wp-all-import-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-activity-log && \
-    composer require city-of-helsinki/activity-log && \
+    composer require soflyy/wp-all-import-pro:$WP_PLUGIN_VERSION_WP_ALL_IMPORT_PRO && \
+    composer config repositories.activity-log vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-activity-log && \
+    composer require city-of-helsinki/activity-log:$WP_PLUGIN_VERSION_ACTIVITY_LOG && \
     composer config repositories.packagist composer https://packagist.org && \
     composer require devgeniem/hkih-linkedevents:$WP_PLUGIN_VERSION_HKIH_LINKEDEVENTS && \
     composer require devgeniem/hkih-cpt-collection:$WP_PLUGIN_VERSION_HKIH_CPT_COLLECTION && \
