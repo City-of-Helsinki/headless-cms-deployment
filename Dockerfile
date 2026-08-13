@@ -55,8 +55,8 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer config repositories.headless-hkih vcs https://github.com/City-of-Helsinki/headless-cms-theme && \
     composer require devgeniem/hkih-theme:$WP_THEME_VERSION_HEADLESS && \
     composer config repositories.advanced-custom-fields-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-advanced-custom-fields-pro && \
-    composer config --json --merge extra.installer-paths."wp-content/mu-plugins/{\$name}/" '["acf/advanced-custom-fields-pro"]' && \
     composer require acf/advanced-custom-fields-pro:$WP_PLUGIN_VERSION_ADVANCED_CUSTOM_FIELDS_PRO && \
+    mv /opt/app-root/src/wp-content/plugins/advanced-custom-fields-pro /opt/app-root/src/wp-content/mu-plugins/advanced-custom-fields-pro && \
     composer config repositories.filebird-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-filebird-pro && \
     composer require ninjateam/filebird-pro:$WP_PLUGIN_VERSION_FILEBIRD_PRO && \
     composer config repositories.polylang-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-polylang-pro && \
