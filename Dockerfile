@@ -85,7 +85,9 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer require "composer/installers:2.2 as v1.99.99" devgeniem/wp-define-more:$WP_PLUGIN_VERSION_WP_DEFINE_MORE && \
     composer require devgeniem/wp-geniem-project-bells-and-whistles:$WP_PLUGIN_WP_GENIEM_PROJECT_BELLS_AND_WHISTLES && \
     composer require devgeniem/wp-geniem-roles:$WP_PLUGIN_VERSION_WP_GENIEM_ROLES && \
+    mv /opt/app-root/src/wp-content/plugins/wp-geniem-roles /opt/app-root/src/wp-content/mu-plugins/wp-geniem-roles && \
     composer require wp-graphql/wp-graphql:$WP_PLUGIN_WP_GRAPHQL && \
+    mv /opt/app-root/src/wp-content/plugins/wp-graphql /opt/app-root/src/wp-content/mu-plugins/wp-graphql && \
     composer require rarst/wps:$WP_PLUGIN_VERSION_WPS && \
     composer require devgeniem/wp-sanitize-accented-uploads:$WP_PLUGIN_VERSION_WP_SANITIZE_ACCENTED_UPLOADS && \
     composer config repositories.wpackagist composer https://wpackagist.org && \
