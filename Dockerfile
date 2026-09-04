@@ -1,4 +1,4 @@
-FROM helsinki.azurecr.io/openshift-wordpress-base:latest
+FROM helsinki.azurecr.io/ubi9/openshift-wordpress-base:6.9.7-php83
 
 ARG MOUNT_SECRET="false"
 ARG COMPOSER_AUTH="{}"
