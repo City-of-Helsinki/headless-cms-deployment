@@ -16,7 +16,7 @@ ARG WP_THEME_VERSION_HEADLESS=""
 ARG WP_PLUGIN_VERSION_ACTIVITY_LOG=""
 ARG WP_PLUGIN_VERSION_AUTODESCRIPTION=""
 ARG WP_PLUGIN_VERSION_DUPLICATE_POST=""
-ARG WP_PLUGIN_VERSION_FILEBIRD_PRO=""
+ARG WP_PLUGIN_VERSION_FILEBIRD=""
 ARG WP_PLUGIN_VERSION_HKIH_CPT_COLLECTION=""
 ARG WP_PLUGIN_VERSION_HKIH_CPT_CONTACT=""
 ARG WP_PLUGIN_VERSION_HKIH_CPT_LANDING_PAGE=""
@@ -56,8 +56,6 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer require devgeniem/hkih-theme:$WP_THEME_VERSION_HEADLESS && \
     composer config repositories.advanced-custom-fields-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-advanced-custom-fields-pro && \
     composer require acf/advanced-custom-fields-pro:$WP_PLUGIN_VERSION_ADVANCED_CUSTOM_FIELDS_PRO && \
-    composer config repositories.filebird-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-filebird-pro && \
-    composer require ninjateam/filebird-pro:$WP_PLUGIN_VERSION_FILEBIRD_PRO && \
     composer config repositories.polylang-pro vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-polylang-pro && \
     composer require wpsyntex/polylang-pro:$WP_PLUGIN_VERSION_POLYLANG_PRO && \
     composer config repositories.wpo365-login-premium vcs https://github.com/City-of-Helsinki/wordpress-helfi-plugin-wpo365-login-premium && \
@@ -97,4 +95,5 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer require wpackagist-plugin/wordpress-importer:$WP_PLUGIN_VERSION_WORDPRESS_IMPORTER && \
     composer require wpackagist-plugin/wp-sentry-integration:$WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION && \
     composer require wpackagist-plugin/wpo365-login:$WP_PLUGIN_VERSION_WPO365_LOGIN && \
+    composer require wpackagist-plugin/filebird:$WP_PLUGIN_VERSION_FILEBIRD && \
     rm -f /opt/app-root/src/.config/composer/auth.json
