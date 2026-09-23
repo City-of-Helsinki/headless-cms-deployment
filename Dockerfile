@@ -91,6 +91,7 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer require wpackagist-plugin/query-monitor:$WP_PLUGIN_VERSION_QUERY_MONITOR && \
     composer require wpackagist-plugin/regenerate-thumbnails:$WP_PLUGIN_VERSION_REGENERATE_THUMBNAILS && \
     composer require wpackagist-plugin/redis-cache:$WP_PLUGIN_VERSION_REDIS_CACHE && \
+    cp /opt/app-root/src/wp-content/plugins/redis-cache/includes/object-cache.php /opt/app-root/src/wp-content/object-cache.php && \
     composer require wpackagist-plugin/svg-support:$WP_PLUGIN_VERSION_SVG_SUPPORT && \
     composer require wpackagist-plugin/wordpress-importer:$WP_PLUGIN_VERSION_WORDPRESS_IMPORTER && \
     composer require wpackagist-plugin/wp-sentry-integration:$WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION && \
