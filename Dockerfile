@@ -42,7 +42,6 @@ ARG WP_PLUGIN_VERSION_WP_SENTRY_INTEGRATION=""
 # Define must-use plugin versions
 ARG WP_PLUGIN_VERSION_ACF_CODIFIER=""
 ARG WP_PLUGIN_VERSION_ADVANCED_CUSTOM_FIELDS_PRO=""
-ARG WP_PLUGIN_VERSION_STREAM=""
 ARG WP_PLUGIN_VERSION_WP_DEFINE_MORE=""
 ARG WP_PLUGIN_WP_GENIEM_PROJECT_BELLS_AND_WHISTLES=""
 ARG WP_PLUGIN_VERSION_WP_GENIEM_ROLES=""
@@ -78,7 +77,6 @@ RUN composer config --json --merge policy.advisories.ignore-id '{"PKSA-xwpn-zs9j
     composer require valu/wp-graphql-polylang:$WP_PLUGIN_VERSION_WP_GRAPHQL_POLYLANG && \
     composer require wp-graphql/wp-graphql-jwt-authentication:$WP_PLUGIN_VERSION_WP_GRAPHQL_JWT_AUTHENTICATION && \
     composer require devgeniem/acf-codifier:$WP_PLUGIN_VERSION_ACF_CODIFIER && \
-    composer require xwp/stream:$WP_PLUGIN_VERSION_STREAM && \
     composer require "composer/installers:2.2 as v1.99.99" devgeniem/wp-define-more:$WP_PLUGIN_VERSION_WP_DEFINE_MORE && \
     composer require devgeniem/wp-geniem-project-bells-and-whistles:$WP_PLUGIN_WP_GENIEM_PROJECT_BELLS_AND_WHISTLES && \
     composer require devgeniem/wp-geniem-roles:$WP_PLUGIN_VERSION_WP_GENIEM_ROLES && \
